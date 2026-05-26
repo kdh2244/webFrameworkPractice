@@ -59,6 +59,9 @@
 
     <form th:action="@{/products}" method="get">
         <input type="text" name="keyword" placeholder="상품명으로 검색"
+               th:value="${keyword}"/>
+        <button type="submit">검색</button>
+        <a th:href="@{/products}">초기화</a>
 
     </form>
 
