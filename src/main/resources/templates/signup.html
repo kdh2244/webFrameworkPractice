@@ -47,6 +47,8 @@
                         이미 계정이 있으신가요?
                         <a th:href="@{/login}" class="text-decoration-none fw-semibold" style="color:#e94560">로그인</a>
                     </p>
+                    <p th:text="${'실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss')
++' | 학번 : 2171057 | 성명 : 김도훈 '}"></p>
                 </div>
             </div>
         </div>

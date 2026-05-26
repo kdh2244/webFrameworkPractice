@@ -54,6 +54,8 @@
                         계정이 없으신가요?
                         <a th:href="@{/signup}" class="text-decoration-none fw-semibold" style="color:#e94560">회원가입</a>
                     </p>
+                    <p th:text="${'실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss')
++' | 학번 : 2171057 | 성명 : 김도훈 '}"></p>
                 </div>
             </div>
         </div>
